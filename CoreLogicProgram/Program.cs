@@ -15,11 +15,15 @@ while (true)
             Obj.Factorial();
             break;
 
-        case 2:
+        case 3:
             PrimeNumber prime = new PrimeNumber();
             prime.Prime();
             break;
 
+        case 4:
+            ReverseNumber Reverse = new ReverseNumber();
+            Reverse.Reverse();
+            break;
 
         default:
             Console.WriteLine("Please Enter Valid Number");
