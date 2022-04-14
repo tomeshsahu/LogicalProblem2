@@ -20,7 +20,7 @@ namespace CoreLogicProgram
                 reverse = reverse * 10 + rem;
                 a = a / 10;
             }
-            Console.WriteLine(reverse + " \n");
+            Console.WriteLine("Reverse Number= "+reverse + " \n");
         }
     }
 }

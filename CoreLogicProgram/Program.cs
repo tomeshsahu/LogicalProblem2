@@ -14,6 +14,10 @@ while (true)
             RFactor Obj = new RFactor();
             Obj.Factorial();
             break;
+        case 2:
+            PerfectNumber Per = new PerfectNumber();
+            Per.Perfect();
+            break;
 
         case 3:
             PrimeNumber prime = new PrimeNumber();
@@ -21,7 +25,7 @@ while (true)
             break;
 
         case 4:
-            ReverseNumber Reverse = new ReverseNumber();
+            ReverseNumber  Reverse = new  ReverseNumber();
             Reverse.Reverse();
             break;
 
