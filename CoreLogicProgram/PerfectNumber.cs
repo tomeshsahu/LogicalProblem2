@@ -22,11 +22,11 @@ namespace CoreLogicProgram
             }
             if(perfect==a)
             {
-                Console.WriteLine(a +" is a perfect number");
+                Console.WriteLine(a +" is a perfect number"+"\n");
             }
             else
             {
-                Console.WriteLine(a +" is a not perfect number");
+                Console.WriteLine(a +" is a not perfect number"+"\n");
             }
         }
     }

@@ -1,37 +1,45 @@
 ﻿using System;
 using CoreLogicProgram;
 
-Console.WriteLine("Welcome to Basic Program");
-while (true)
+class Program
 {
-    Console.WriteLine("1.Factorial\n2.Perfect Number\n3.primeNumber\n4.Reverse Number");
-    Console.WriteLine("Please Enter the Number Which program you want to run");
-    int option = Convert.ToInt32(Console.ReadLine());
 
-    switch (option)
+    public static void Main(string[] args)
     {
-        case 1:
-            RFactor Obj = new RFactor();
-            Obj.Factorial();
-            break;
-        case 2:
-            PerfectNumber Per = new PerfectNumber();
-            Per.Perfect();
-            break;
+        Console.WriteLine("Welcome to Basic Program");
+        while (true)
+        {
+            Console.WriteLine("1.Fibonacci\n2.Perfect Number\n3.primeNumber\n4.Reverse Number");
+            Console.WriteLine("Please Enter the Number Which program you want to run");
+            int option = Convert.ToInt32(Console.ReadLine());
 
-        case 3:
-            PrimeNumber prime = new PrimeNumber();
-            prime.Prime();
-            break;
+            switch (option)
+            {
+                case 1:
+                    Fibonacci fibonacci = new Fibonacci();
+                    fibonacci.Fibonnac();
+                    break;
+                case 2:
+                    PerfectNumber Per = new PerfectNumber();
+                    Per.Perfect();
+                    break;
 
-        case 4:
-            ReverseNumber  Reverse = new  ReverseNumber();
-            Reverse.Reverse();
-            break;
+                case 3:
+                    PrimeNumber prime = new PrimeNumber();
+                    prime.Prime();
+                    break;
 
-        default:
-            Console.WriteLine("Please Enter Valid Number");
-            break;
+                case 4:
+                    ReverseNumber Reverse = new ReverseNumber();
+                    Reverse.Reverse();
+                    break;
 
+
+                default:
+                    Console.WriteLine("Please Enter Valid Option" + "\n");
+                    break;
+
+            }
+        }
     }
 }

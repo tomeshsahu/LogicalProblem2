@@ -12,19 +12,14 @@ namespace CoreLogicProgram
         public void Factorial()
         {
             Console.WriteLine("Enter Number for Factorial");
-            int a=Convert.ToInt32(Console.ReadLine());
+            int a = Convert.ToInt32(Console.ReadLine());
 
-            for(int i = a; i > 0; i--)
+            for (int i = a; i > 0; i--)
             {
                 Fact = Fact * i;
-                
+
             }
             Console.WriteLine("Factorial is " + Fact);
-        }
-
-
-        
-
-     
+        }     
     }
 }

@@ -11,7 +11,7 @@ namespace CoreLogicProgram
         int count=0;
         public void Prime()
         {
-            Console.WriteLine("Check the Number is Prime or not");
+            Console.WriteLine("Enter Number for Checking");
 
             int a=Convert.ToInt32(Console.ReadLine());
             for (int i = 1; i <= a; i++)
