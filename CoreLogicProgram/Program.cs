@@ -46,7 +46,7 @@ while(check)
             break;
         case 8:
             InBinary binary = new InBinary();
-            binary.Binary();
+            binary.CalToBinary(14);
             break;
         case 9:
             VendingMachine Machine = new VendingMachine();

@@ -15,12 +15,13 @@ namespace CoreLogicProgram
         {
             int[] array = new int[10];
 
-            Console.WriteLine("Enter a Number");
+            Console.WriteLine("Enter Number");
             for (int i = 0; i < array.Length; i++)
             {
-                array[i] = i;
+                array[i] = int.Parse(Console.ReadLine());
             }
-            int [] array2 = new int[10];
+
+            
             while (array.Length > 0)
             {
                 Random random = new Random();
@@ -28,18 +29,21 @@ namespace CoreLogicProgram
 
                 if (array[i] == check)
                 {
-                    array2[i] = check;
+                    array[i] = check;
                 }
                 else
                 {
                     count++;
                 }
                 i++;
-                }
+            }
             Console.WriteLine(count);
-            Console.WriteLine(array[i]);
+            for (int i = 0; i < array.Length; i++)
+            {
+                Console.WriteLine(array[i]);
             }
-            }
+        }
+    }
            
 
 

@@ -8,22 +8,23 @@ namespace CoreLogicProgram
 {
     public class InBinary
     {
-        public void Binary()
+        private int i;
+
+        public void CalToBinary(int decimalNum)//14
         {
-            Console.WriteLine("Enter The Number");
-            int num = Convert.ToInt32(Console.ReadLine());
-
-            while(num>0)
+            int[] binary = new int[decimalNum];
+            int i;
+            Console.Write("Decimal Number :" + decimalNum + " to binary Number: " + " ");
+            for (i = 0; decimalNum > 0; i++)
             {
-                int S = num % 2;
-                {
-                    
-                    Console.WriteLine(S);
-
-                }
-                num = num / 2;
+                binary[i] = decimalNum % 2;//0 1 1 1
+                decimalNum /= 2;//7
             }
-            
+            for (i -= 1; i >= 0; i--)
+            {
+                Console.Write(binary[i]);//1 1 1 0
+            }
+
         }
     }
 }
