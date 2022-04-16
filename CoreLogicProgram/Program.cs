@@ -6,7 +6,7 @@ bool check = true;
 while(check)
 { 
 
-    Console.WriteLine("1.Factorial\n2.Perfect Number\n3.primeNumber\n4.Reverse Number\n5.Fibonacci\n6.Temprature Conversion\n7.DayOfWeak");
+    Console.WriteLine("1.Factorial\n2.Perfect Number\n3.primeNumber\n4.Reverse Number\n5.Fibonacci\n6.Temprature Conversion\n7.DayOfWeak\n8.In-Binary\n9.Vending Machine\n10.Coupon Number\n11.Monthly Payment");
     Console.WriteLine("Please Enter the Number Which program you want to run");
     int option = Convert.ToInt32(Console.ReadLine());
 
@@ -43,6 +43,22 @@ while(check)
             DayOfWeak day = new DayOfWeak();
             day.DOW(1, 1, 2016);
             day.MOY(8, 8, 2016);
+            break;
+        case 8:
+            InBinary binary = new InBinary();
+            binary.Binary();
+            break;
+        case 9:
+            VendingMachine Machine = new VendingMachine();
+            Machine.Vending();
+            break;
+        case 10:
+            CouponNumber coupon = new CouponNumber();
+            coupon.Coupon();
+            break;
+        case 11:
+            MonthlyPayment Payment = new MonthlyPayment();
+            Payment.CalMonthlyPayment(90000,5000,5);
             break;
         case 0:
             check = false;
