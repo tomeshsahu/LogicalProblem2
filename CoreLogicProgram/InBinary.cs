@@ -20,7 +20,7 @@ namespace CoreLogicProgram
                 binary[i] = decimalNum % 2;//0 1 1 1
                 decimalNum /= 2;//7
             }
-            for (i -= 1; i >= 0; i--)
+            for (i = i - 1; i >= 0; i--)
             {
                 Console.Write(binary[i]);//1 1 1 0
             }

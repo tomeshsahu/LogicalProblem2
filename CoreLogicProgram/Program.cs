@@ -6,7 +6,7 @@ bool check = true;
 while(check)
 { 
 
-    Console.WriteLine("1.Factorial\n2.Perfect Number\n3.primeNumber\n4.Reverse Number\n5.Fibonacci\n6.Temprature Conversion\n7.DayOfWeak\n8.In-Binary\n9.Vending Machine\n10.Coupon Number\n11.Monthly Payment");
+    Console.WriteLine("1.Factorial\n2.Perfect Number\n3.primeNumber\n4.Reverse Number\n5.Fibonacci\n6.Temprature Conversion\n7.DayOfWeak\n8.In-Binary\n9.Vending Machine\n10.Coupon Number\n11.Monthly Payment\n12.Square Root");
     Console.WriteLine("Please Enter the Number Which program you want to run");
     int option = Convert.ToInt32(Console.ReadLine());
 
@@ -46,7 +46,7 @@ while(check)
             break;
         case 8:
             InBinary binary = new InBinary();
-            binary.CalToBinary(14);
+            binary.CalToBinary(6);
             break;
         case 9:
             VendingMachine Machine = new VendingMachine();
@@ -59,6 +59,10 @@ while(check)
         case 11:
             MonthlyPayment Payment = new MonthlyPayment();
             Payment.CalMonthlyPayment(90000,5000,5);
+            break;
+        case 12:
+            SquareRoot Square = new SquareRoot();
+            Square.Root();
             break;
         case 0:
             check = false;
